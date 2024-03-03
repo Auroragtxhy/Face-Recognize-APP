@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/allUser"
+        android:title="首页"
+        android:icon="@mipmap/all_normal"/>
+
+    <item
+        android:id="@+id/unknownUser"
+        android:title="未知"
+        android:icon="@mipmap/unknown_normal" />
+    <item android:id="@+id/knownUser"
+        android:title="用户"
+        android:icon="@mipmap/user_normal"/>
+
+</menu>

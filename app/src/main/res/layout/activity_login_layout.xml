@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_background">
+
+    <LinearLayout
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/sys_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="人脸识别门禁系统"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/user_account_et"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:hint="请输入账号"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/user_password_et"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入密码"
+            android:textSize="20sp"/>
+
+        <!--添加代码使得输入的密码不可见--><!--android:inputType="textPassword"-->
+
+        <Button
+            android:id="@+id/user_login_btn"
+            android:text="登录"
+            android:background="@drawable/btn_selector_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/user_register_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击注册"
+                android:textColor="#337F8B"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/user_resetPassword_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="重置密码"
+                android:textColor="#337F8B"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/sys_welcome_word_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="欢迎使用人脸识别门禁系统"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
