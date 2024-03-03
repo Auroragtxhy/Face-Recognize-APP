@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--加载home不同状态（获取数据成功，失败，正在加载，加载为空）的界面的坑位，本质是一个fragment-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+</FrameLayout>

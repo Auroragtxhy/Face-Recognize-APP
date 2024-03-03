@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.CheckDetailActivity"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="1dp"
+        android:focusable="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/task_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:text="识别的人脸信息："
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/Name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/task_name_tv"
+                    android:text="小蟹"
+                    android:textColor="#00A6FF"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/task_person_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:text="识别时间点: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/task_person_tv"
+                    android:text="2022.11.8 12:02:36"
+                    android:textColor="#00A6FF"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/task_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:textSize="18sp"
+                    android:text="是否开门: "/>
+
+                <TextView
+                    android:id="@+id/result_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/task_time_tv"
+                    android:text="ok"
+                    android:textColor="#00A6FF"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="1dp"
+        android:focusable="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="识别的人脸图片"
+                android:textColor="#00A6FF"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/image_iv"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:src="@mipmap/user_woman"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:layout_marginTop="10dp" />
+
+
+</LinearLayout>
